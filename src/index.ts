@@ -1,2 +1,2 @@
-export { MyButton } from './MyButton'
-export * from './Adult'
+export * from './Model'
+export { default as AnatomyPicker } from './AnatomyPicker'

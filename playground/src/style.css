@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,5 +37,10 @@ svg g {
 
 .body-model__part:hover {
 fill:   #71B5F0
+}
 
+svg .body-model__part[aria-selected="true"] {
+  fill: var(--color-blue-600); /* #1471C9 */
+  stroke: #0a4c89;
+  /* stroke-width: 2; */
 }
