@@ -5,5 +5,5 @@ import { expect, test } from 'vitest'
 import { AnatomyPicker } from '../src'
 
 test('button', () => {
-  render(<AnatomyPicker model="abdominal-pain-female")
+  render(<AnatomyPicker model="abdominal-pain-female" />)
 })
