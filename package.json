@@ -58,14 +58,12 @@
     "@vitejs/plugin-react": "^5.1.1",
     "bumpp": "^10.3.1",
     "concurrently": "^9.2.1",
+    "gh-pages": "^6.3.0",
     "happy-dom": "^20.0.10",
     "storybook": "^10.1.2",
     "tsdown": "^0.16.4",
     "typescript": "^5.9.3",
     "vite": "npm:rolldown-vite@^7.2.5",
     "vitest": "^4.0.9"
-  },
-  "dependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
