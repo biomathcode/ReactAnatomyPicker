@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import type { ComponentType, SVGProps } from "react";
 
+import styles from "./InteractiveSVG.module.css";
+
+
 export interface InteractiveSVGProps
     extends Omit<SVGProps<SVGSVGElement>, "ref"> {
     SvgComponent: ComponentType<SVGProps<SVGSVGElement>>;
@@ -34,6 +37,9 @@ export function InteractiveSVG({
         elements.forEach((el) => {
             const part = el.getAttribute("data-part");
             if (!part) return;
+
+            el.classList.add(styles["anatomy-part"] ?? "anatomy-part");
+
 
             // Make element interactive
             const htmlLike = el as unknown as HTMLElement;
@@ -98,5 +104,17 @@ export function InteractiveSVG({
         setLocalSelected(selected);
     }, [selected]);
 
-    return <SvgComponent role="listbox" ref={ref} {...props} />;
+    return <div
+        style={
+            {
+                "--anatomy-default": "#c2e0f8",
+                "--anatomy-hover": "#71B5F0",
+                "--anatomy-selected": highlightColor,
+            } as React.CSSProperties
+        }
+    >
+        <SvgComponent role="listbox" ref={ref} {...props} />
+
+    </div>
+
 }

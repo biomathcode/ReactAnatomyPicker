@@ -1,21 +1,5 @@
 import { AnatomyPicker } from '../../src'
 
-import {
-  AdultMaleFront,
-  AdultMaleBack,
-  AdultFemaleBack, AdultFemaleFront,
-  ChildMaleFront,
-  ChildMaleBack,
-  ChildFemaleBack,
-  ChildFemaleFront,
-  ToddlerFemaleBack,
-  ToddlerFemaleFront,
-  ToddlerMaleBack,
-  ToddlerMaleFront,
-  InfantBack,
-  InfantFront,
-} from '../../src'
-
 const list = ["adult-male", "adult-female", "child-male", "child-female", "infant", "toddler-male", "toddler-female", "abdominal-pain-male", "abdominal-pain-female"]
 
 export function App() {
@@ -33,10 +17,6 @@ export function App() {
           height={50}
         />)
       }
-
-
-
-
     </div>
   )
 }

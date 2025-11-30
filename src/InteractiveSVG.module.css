@@ -1,0 +1,15 @@
+.anatomy-part {
+  fill: var(--anatomy-default);
+  transition: fill 0.15s ease;
+}
+
+.anatomy-part:hover {
+  fill: var(--anatomy-hover);
+}
+
+.anatomy-part[aria-selected="true"] {
+  fill: var(--anatomy-selected);
+  stroke: #0a4c89;
+}
+
+

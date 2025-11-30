@@ -161,7 +161,13 @@ export default function AnatomyPicker({
     highlightColor = "#0080ff",
     ...props
 }: AnatomyPickerProps) {
-    const key = `${model}-${orientation}` as ViewKey;
+    const isAbdominalPain =
+        model === "abdominal-pain-male" ||
+        model === "abdominal-pain-female";
+
+    const key = isAbdominalPain
+        ? (model as ViewKey)    // no -front or -back
+        : (`${model}-${orientation}` as ViewKey);
     const SvgComponent = VIEW_MAP[key];
 
     if (!SvgComponent) {
