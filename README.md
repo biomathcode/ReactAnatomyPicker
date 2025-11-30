@@ -70,12 +70,12 @@ export default function Demo() {
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/assets/male_front.png" width="200" /></td>
-    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/assets/female_front.png" width="200" /></td>
+    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/asserts/male_front.png" width="200" /></td>
+    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/asserts/female_front.png" width="200" /></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/assets/infant.png" width="200" /></td>
-    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/assets/toddler_back.png" width="200" /></td>
+    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/asserts/infant.png" width="200" /></td>
+    <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/asserts/toddler_back.png" width="200" /></td>
   </tr>
 </table>
 
