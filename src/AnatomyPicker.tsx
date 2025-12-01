@@ -16,10 +16,9 @@ import {
     ToddlerMaleBack,
     ToddlerFemaleFront,
     ToddlerFemaleBack,
-
 } from "./Model";
 
-type SelectionFrontValue =
+export type SelectionFrontValue =
     "head" |
     "eyes" |
     "ears" |
@@ -39,7 +38,7 @@ type SelectionFrontValue =
     "lower_leg" |
     "foot"
 
-type SelectionBackValue =
+export type SelectionBackValue =
     "head" |
     "ears" |
     "neck_or_throat" |
@@ -56,10 +55,10 @@ type SelectionBackValue =
     "lower_leg" |
     "foot"
 
-type SelectionFemaleValue = SelectionFrontValue | "breasts"
+export type SelectionFemaleValue = SelectionFrontValue | "breasts"
 
 
-type InfantFrontValue =
+export type InfantFrontValue =
     "head" |
     "eyes" |
     "ears" |
@@ -71,7 +70,7 @@ type InfantFrontValue =
     "foot"
 
 
-type InfactBackType =
+export type InfactBackType =
     "head" |
     "ears" |
     "neck" |
@@ -83,16 +82,6 @@ type InfactBackType =
     "lower_limb" |
     "foot"
 
-
-
-type AbdominalPainType =
-    "upper-right" |
-    "upper-middle" |
-    "upper-left" |
-    "center" |
-    "lower-right" |
-    "lower-middle" |
-    "lower-left"
 
 
 

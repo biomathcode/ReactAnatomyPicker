@@ -1,7 +1,5 @@
 import type { SVGProps } from "react";
 
-
-
 const AdultMaleFront = (props: SVGProps<SVGSVGElement>) => (
 
     <svg
@@ -1415,8 +1413,6 @@ const ToddlerFemaleBack = (props: SVGProps<SVGSVGElement>) => (
         </g>
     </svg>
 );
-
-
 
 export {
     AdultMaleFront,
