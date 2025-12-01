@@ -78,7 +78,7 @@ export default function Demo() {
     <td><img src="https://raw.githubusercontent.com/biomathcode/ReactAnatomyPicker/main/asserts/toddler_back.png" width="200" /></td>
   </tr>
 </table>
-
+b
 
 
 ## Development
