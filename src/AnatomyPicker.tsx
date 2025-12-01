@@ -16,8 +16,7 @@ import {
     ToddlerMaleBack,
     ToddlerFemaleFront,
     ToddlerFemaleBack,
-    AbdominalPainMale,
-    AbdominalPainFemale,
+
 } from "./Model";
 
 type SelectionFrontValue =
@@ -120,8 +119,7 @@ export const VIEW_MAP = {
     "toddler-female-front": ToddlerFemaleFront,
     "toddler-female-back": ToddlerFemaleBack,
 
-    "abdominal-pain-male": AbdominalPainMale,
-    "abdominal-pain-female": AbdominalPainFemale,
+
 } satisfies Record<string, ComponentType<SVGProps<SVGSVGElement>>>;
 
 export type ViewKey = keyof typeof VIEW_MAP;
@@ -139,8 +137,6 @@ export interface AnatomyPickerProps
     | "infant"
     | "toddler-male"
     | "toddler-female"
-    | "abdominal-pain-male"
-    | "abdominal-pain-female";
 
     orientation?: "front" | "back";
 
@@ -161,13 +157,9 @@ export default function AnatomyPicker({
     highlightColor = "#0080ff",
     ...props
 }: AnatomyPickerProps) {
-    const isAbdominalPain =
-        model === "abdominal-pain-male" ||
-        model === "abdominal-pain-female";
 
-    const key = isAbdominalPain
-        ? (model as ViewKey)    // no -front or -back
-        : (`${model}-${orientation}` as ViewKey);
+
+    const key = (`${model}-${orientation}` as ViewKey);
     const SvgComponent = VIEW_MAP[key];
 
     if (!SvgComponent) {
